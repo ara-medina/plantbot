@@ -14,33 +14,65 @@ This project is currently in early development. Features and documentation will 
 - Planting calendar
 - Climate-based advice
 
-## Getting Started
+## Prerequisites
 
-These instructions will be updated as the project develops.
+- Docker and Docker Compose
+- Node.js and npm
+- Python 3.8+
+- PostgreSQL
 
-### Prerequisites
+## Setup and Installation
 
-Before you can run or contribute to this project, you need to have Docker Desktop installed on your machine. Docker Desktop includes Docker Engine, Docker CLI client, Docker Compose, Docker Content Trust, Kubernetes, and Credential Helper.
+1. Clone the repository:
+```
+git clone https://github.com/ara-medina/plantbot.git
+cd ai-garden-planner
+```
 
-After installing Docker Desktop, you can run the project by navigating to the project directory in your terminal and running: `docker-compose up`
+2. Set up the backend:
+```
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-This command will start all the services defined in your `docker-compose.yml` file.
+3. Create a `.env` file in the `backend` directory with your PostgreSQL credentials:
+```
+POSTGRES_USER=yourusername
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_DB=plantbot
+```
 
-Additional prerequisites TBD.
+4. Set up the frontend:
+```
+cd ..  # Make sure you're in the root directory
+docker-compose up -d
+```
 
-## Development Setup
+## Running the Application
 
-Note: The current database configuration uses placeholder credentials. 
-Remember to update these with secure credentials before deploying or 
-pushing to a public repository.
+1. Start the backend:
+```
+cd backend
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+flask run
+```
 
-### Installation
+The backend will be available at `http://localhost:5000`.
 
-TBD.
+2. In a new terminal, start the frontend:
+```
+cd frontend
+npm run dev
+```
 
-## Usage
+The frontend will be available at `http://localhost:5173` (or another port if 5173 is in use).
 
-TBD.
+## Development
+
+- Backend code is in the `backend` directory. The main file is `app.py`.
+- Frontend code is in the `frontend` directory. 
 
 ## Contributing
 
