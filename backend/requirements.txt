@@ -1,0 +1,19 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+blinker==1.8.2
+click==8.1.7
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+future @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+greenlet==3.0.3
+importlib_metadata==8.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+macholib @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+MarkupSafe==2.1.5
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+six @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+SQLAlchemy==2.0.31
+typing_extensions==4.12.2
+Werkzeug==3.0.3
+zipp==3.19.2
