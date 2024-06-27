@@ -14,9 +14,9 @@ db = SQLAlchemy(app)
 def hello():
     try:
         db.session.execute(text('SELECT 1'))
-        return "Hello from AI Garden Planner Backend! Database connection successful."
+        return "Hello from Plant Bot Backend! Database connection successful."
     except Exception as e:
-        return f"Hello from AI Garden Planner Backend! Database connection failed: {str(e)}"
+        return f"Hello from Plant Bot Backend! Database connection failed: {str(e)}"
 
 if __name__ == '__main__':
     app.run(debug=True)
